@@ -1,0 +1,19 @@
+Start testing: Jan 10 16:04 CET
+----------------------------------------------------------
+1/1 Testing: SimpleTest
+1/1 Test: SimpleTest
+Command: "/home/iut45/Etudiants/o22202608/WinHome/multimedia/TP-multimedia/BUILD/td"
+Directory: /home/iut45/Etudiants/o22202608/WinHome/multimedia/TP-multimedia/BUILD
+"SimpleTest" start time: Jan 10 16:04 CET
+Output:
+----------------------------------------------------------
+1782380.00359496
+<end of output>
+Test time =  13.58 sec
+----------------------------------------------------------
+Test Passed.
+"SimpleTest" end time: Jan 10 16:04 CET
+"SimpleTest" time elapsed: 00:00:13
+----------------------------------------------------------
+
+End testing: Jan 10 16:04 CET
