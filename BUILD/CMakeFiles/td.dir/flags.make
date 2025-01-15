@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/iut45/Etudiants/o22202608/WinHome/multimedia/canevasTD5/BUILD -isystem /usr/include/opencv4
+CXX_INCLUDES = -I/home/iut45/Etudiants/o22202608/WinHome/multimedia/TP-multimedia/BUILD -isystem /usr/include/opencv4
 
 CXX_FLAGS =   -DGLEW_STATIC -g   -std=c++17
 

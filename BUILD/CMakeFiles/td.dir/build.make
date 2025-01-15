@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/iut45/Etudiants/o22202608/WinHome/multimedia/canevasTD5
+CMAKE_SOURCE_DIR = /home/iut45/Etudiants/o22202608/WinHome/multimedia/TP-multimedia
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/iut45/Etudiants/o22202608/WinHome/multimedia/canevasTD5/BUILD
+CMAKE_BINARY_DIR = /home/iut45/Etudiants/o22202608/WinHome/multimedia/TP-multimedia/BUILD
 
 # Include any dependencies generated for this target.
 include CMakeFiles/td.dir/depend.make
@@ -70,59 +70,59 @@ include CMakeFiles/td.dir/progress.make
 include CMakeFiles/td.dir/flags.make
 
 CMakeFiles/td.dir/GLError.cpp.o: CMakeFiles/td.dir/flags.make
-CMakeFiles/td.dir/GLError.cpp.o: /home/iut45/Etudiants/o22202608/WinHome/multimedia/canevasTD5/GLError.cpp
+CMakeFiles/td.dir/GLError.cpp.o: /home/iut45/Etudiants/o22202608/WinHome/multimedia/TP-multimedia/GLError.cpp
 CMakeFiles/td.dir/GLError.cpp.o: CMakeFiles/td.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/iut45/Etudiants/o22202608/WinHome/multimedia/canevasTD5/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/td.dir/GLError.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/td.dir/GLError.cpp.o -MF CMakeFiles/td.dir/GLError.cpp.o.d -o CMakeFiles/td.dir/GLError.cpp.o -c /home/iut45/Etudiants/o22202608/WinHome/multimedia/canevasTD5/GLError.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/iut45/Etudiants/o22202608/WinHome/multimedia/TP-multimedia/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/td.dir/GLError.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/td.dir/GLError.cpp.o -MF CMakeFiles/td.dir/GLError.cpp.o.d -o CMakeFiles/td.dir/GLError.cpp.o -c /home/iut45/Etudiants/o22202608/WinHome/multimedia/TP-multimedia/GLError.cpp
 
 CMakeFiles/td.dir/GLError.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/td.dir/GLError.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/iut45/Etudiants/o22202608/WinHome/multimedia/canevasTD5/GLError.cpp > CMakeFiles/td.dir/GLError.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/iut45/Etudiants/o22202608/WinHome/multimedia/TP-multimedia/GLError.cpp > CMakeFiles/td.dir/GLError.cpp.i
 
 CMakeFiles/td.dir/GLError.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/td.dir/GLError.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/iut45/Etudiants/o22202608/WinHome/multimedia/canevasTD5/GLError.cpp -o CMakeFiles/td.dir/GLError.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/iut45/Etudiants/o22202608/WinHome/multimedia/TP-multimedia/GLError.cpp -o CMakeFiles/td.dir/GLError.cpp.s
 
 CMakeFiles/td.dir/repere.cpp.o: CMakeFiles/td.dir/flags.make
-CMakeFiles/td.dir/repere.cpp.o: /home/iut45/Etudiants/o22202608/WinHome/multimedia/canevasTD5/repere.cpp
+CMakeFiles/td.dir/repere.cpp.o: /home/iut45/Etudiants/o22202608/WinHome/multimedia/TP-multimedia/repere.cpp
 CMakeFiles/td.dir/repere.cpp.o: CMakeFiles/td.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/iut45/Etudiants/o22202608/WinHome/multimedia/canevasTD5/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/td.dir/repere.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/td.dir/repere.cpp.o -MF CMakeFiles/td.dir/repere.cpp.o.d -o CMakeFiles/td.dir/repere.cpp.o -c /home/iut45/Etudiants/o22202608/WinHome/multimedia/canevasTD5/repere.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/iut45/Etudiants/o22202608/WinHome/multimedia/TP-multimedia/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/td.dir/repere.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/td.dir/repere.cpp.o -MF CMakeFiles/td.dir/repere.cpp.o.d -o CMakeFiles/td.dir/repere.cpp.o -c /home/iut45/Etudiants/o22202608/WinHome/multimedia/TP-multimedia/repere.cpp
 
 CMakeFiles/td.dir/repere.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/td.dir/repere.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/iut45/Etudiants/o22202608/WinHome/multimedia/canevasTD5/repere.cpp > CMakeFiles/td.dir/repere.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/iut45/Etudiants/o22202608/WinHome/multimedia/TP-multimedia/repere.cpp > CMakeFiles/td.dir/repere.cpp.i
 
 CMakeFiles/td.dir/repere.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/td.dir/repere.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/iut45/Etudiants/o22202608/WinHome/multimedia/canevasTD5/repere.cpp -o CMakeFiles/td.dir/repere.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/iut45/Etudiants/o22202608/WinHome/multimedia/TP-multimedia/repere.cpp -o CMakeFiles/td.dir/repere.cpp.s
 
-CMakeFiles/td.dir/td5.cpp.o: CMakeFiles/td.dir/flags.make
-CMakeFiles/td.dir/td5.cpp.o: /home/iut45/Etudiants/o22202608/WinHome/multimedia/canevasTD5/td5.cpp
-CMakeFiles/td.dir/td5.cpp.o: CMakeFiles/td.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/iut45/Etudiants/o22202608/WinHome/multimedia/canevasTD5/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/td.dir/td5.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/td.dir/td5.cpp.o -MF CMakeFiles/td.dir/td5.cpp.o.d -o CMakeFiles/td.dir/td5.cpp.o -c /home/iut45/Etudiants/o22202608/WinHome/multimedia/canevasTD5/td5.cpp
+CMakeFiles/td.dir/td6.cpp.o: CMakeFiles/td.dir/flags.make
+CMakeFiles/td.dir/td6.cpp.o: /home/iut45/Etudiants/o22202608/WinHome/multimedia/TP-multimedia/td6.cpp
+CMakeFiles/td.dir/td6.cpp.o: CMakeFiles/td.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/iut45/Etudiants/o22202608/WinHome/multimedia/TP-multimedia/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/td.dir/td6.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/td.dir/td6.cpp.o -MF CMakeFiles/td.dir/td6.cpp.o.d -o CMakeFiles/td.dir/td6.cpp.o -c /home/iut45/Etudiants/o22202608/WinHome/multimedia/TP-multimedia/td6.cpp
 
-CMakeFiles/td.dir/td5.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/td.dir/td5.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/iut45/Etudiants/o22202608/WinHome/multimedia/canevasTD5/td5.cpp > CMakeFiles/td.dir/td5.cpp.i
+CMakeFiles/td.dir/td6.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/td.dir/td6.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/iut45/Etudiants/o22202608/WinHome/multimedia/TP-multimedia/td6.cpp > CMakeFiles/td.dir/td6.cpp.i
 
-CMakeFiles/td.dir/td5.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/td.dir/td5.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/iut45/Etudiants/o22202608/WinHome/multimedia/canevasTD5/td5.cpp -o CMakeFiles/td.dir/td5.cpp.s
+CMakeFiles/td.dir/td6.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/td.dir/td6.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/iut45/Etudiants/o22202608/WinHome/multimedia/TP-multimedia/td6.cpp -o CMakeFiles/td.dir/td6.cpp.s
 
 # Object files for target td
 td_OBJECTS = \
 "CMakeFiles/td.dir/GLError.cpp.o" \
 "CMakeFiles/td.dir/repere.cpp.o" \
-"CMakeFiles/td.dir/td5.cpp.o"
+"CMakeFiles/td.dir/td6.cpp.o"
 
 # External object files for target td
 td_EXTERNAL_OBJECTS =
 
 td: CMakeFiles/td.dir/GLError.cpp.o
 td: CMakeFiles/td.dir/repere.cpp.o
-td: CMakeFiles/td.dir/td5.cpp.o
+td: CMakeFiles/td.dir/td6.cpp.o
 td: CMakeFiles/td.dir/build.make
 td: /usr/lib/x86_64-linux-gnu/libGL.so
 td: /usr/lib/x86_64-linux-gnu/libopencv_stitching.so.4.6.0
@@ -181,7 +181,7 @@ td: /usr/lib/x86_64-linux-gnu/libopencv_photo.so.4.6.0
 td: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.4.6.0
 td: /usr/lib/x86_64-linux-gnu/libopencv_core.so.4.6.0
 td: CMakeFiles/td.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/iut45/Etudiants/o22202608/WinHome/multimedia/canevasTD5/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable td"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/iut45/Etudiants/o22202608/WinHome/multimedia/TP-multimedia/BUILD/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable td"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/td.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -193,6 +193,6 @@ CMakeFiles/td.dir/clean:
 .PHONY : CMakeFiles/td.dir/clean
 
 CMakeFiles/td.dir/depend:
-	cd /home/iut45/Etudiants/o22202608/WinHome/multimedia/canevasTD5/BUILD && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/iut45/Etudiants/o22202608/WinHome/multimedia/canevasTD5 /home/iut45/Etudiants/o22202608/WinHome/multimedia/canevasTD5 /home/iut45/Etudiants/o22202608/WinHome/multimedia/canevasTD5/BUILD /home/iut45/Etudiants/o22202608/WinHome/multimedia/canevasTD5/BUILD /home/iut45/Etudiants/o22202608/WinHome/multimedia/canevasTD5/BUILD/CMakeFiles/td.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/iut45/Etudiants/o22202608/WinHome/multimedia/TP-multimedia/BUILD && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/iut45/Etudiants/o22202608/WinHome/multimedia/TP-multimedia /home/iut45/Etudiants/o22202608/WinHome/multimedia/TP-multimedia /home/iut45/Etudiants/o22202608/WinHome/multimedia/TP-multimedia/BUILD /home/iut45/Etudiants/o22202608/WinHome/multimedia/TP-multimedia/BUILD /home/iut45/Etudiants/o22202608/WinHome/multimedia/TP-multimedia/BUILD/CMakeFiles/td.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/td.dir/depend
 

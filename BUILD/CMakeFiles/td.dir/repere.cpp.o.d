@@ -1,7 +1,7 @@
 CMakeFiles/td.dir/repere.cpp.o: \
- /home/iut45/Etudiants/o22202608/WinHome/multimedia/canevasTD5/repere.cpp \
+ /home/iut45/Etudiants/o22202608/WinHome/multimedia/TP-multimedia/repere.cpp \
  /usr/include/stdc-predef.h \
- /home/iut45/Etudiants/o22202608/WinHome/multimedia/canevasTD5/repere.h \
+ /home/iut45/Etudiants/o22202608/WinHome/multimedia/TP-multimedia/repere.h \
  /usr/include/c++/13/iostream /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \

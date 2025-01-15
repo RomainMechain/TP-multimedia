@@ -1,7 +1,7 @@
 CMakeFiles/td.dir/GLError.cpp.o: \
- /home/iut45/Etudiants/o22202608/WinHome/multimedia/canevasTD5/GLError.cpp \
+ /home/iut45/Etudiants/o22202608/WinHome/multimedia/TP-multimedia/GLError.cpp \
  /usr/include/stdc-predef.h \
- /home/iut45/Etudiants/o22202608/WinHome/multimedia/canevasTD5/GLError.h \
+ /home/iut45/Etudiants/o22202608/WinHome/multimedia/TP-multimedia/GLError.h \
  /usr/include/c++/13/iostream /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \

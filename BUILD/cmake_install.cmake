@@ -1,4 +1,4 @@
-# Install script for directory: /home/iut45/Etudiants/o22202608/WinHome/multimedia/canevasTD5
+# Install script for directory: /home/iut45/Etudiants/o22202608/WinHome/multimedia/TP-multimedia
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/iut45/Etudiants/o22202608/WinHome/multimedia/canevasTD5/BUILD/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/iut45/Etudiants/o22202608/WinHome/multimedia/TP-multimedia/BUILD/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/iut45/Etudiants/o22202608/WinHome/multimedia/canevasTD5
+CMAKE_SOURCE_DIR = /home/iut45/Etudiants/o22202608/WinHome/multimedia/TP-multimedia
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/iut45/Etudiants/o22202608/WinHome/multimedia/canevasTD5/BUILD
+CMAKE_BINARY_DIR = /home/iut45/Etudiants/o22202608/WinHome/multimedia/TP-multimedia/BUILD
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -97,9 +97,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/iut45/Etudiants/o22202608/WinHome/multimedia/canevasTD5/BUILD/CMakeFiles /home/iut45/Etudiants/o22202608/WinHome/multimedia/canevasTD5/BUILD//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/iut45/Etudiants/o22202608/WinHome/multimedia/TP-multimedia/BUILD/CMakeFiles /home/iut45/Etudiants/o22202608/WinHome/multimedia/TP-multimedia/BUILD//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/iut45/Etudiants/o22202608/WinHome/multimedia/canevasTD5/BUILD/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/iut45/Etudiants/o22202608/WinHome/multimedia/TP-multimedia/BUILD/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -200,29 +200,29 @@ repere.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/td.dir/build.make CMakeFiles/td.dir/repere.cpp.s
 .PHONY : repere.cpp.s
 
-td5.o: td5.cpp.o
-.PHONY : td5.o
+td6.o: td6.cpp.o
+.PHONY : td6.o
 
 # target to build an object file
-td5.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/td.dir/build.make CMakeFiles/td.dir/td5.cpp.o
-.PHONY : td5.cpp.o
+td6.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/td.dir/build.make CMakeFiles/td.dir/td6.cpp.o
+.PHONY : td6.cpp.o
 
-td5.i: td5.cpp.i
-.PHONY : td5.i
+td6.i: td6.cpp.i
+.PHONY : td6.i
 
 # target to preprocess a source file
-td5.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/td.dir/build.make CMakeFiles/td.dir/td5.cpp.i
-.PHONY : td5.cpp.i
+td6.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/td.dir/build.make CMakeFiles/td.dir/td6.cpp.i
+.PHONY : td6.cpp.i
 
-td5.s: td5.cpp.s
-.PHONY : td5.s
+td6.s: td6.cpp.s
+.PHONY : td6.s
 
 # target to generate assembly for a file
-td5.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/td.dir/build.make CMakeFiles/td.dir/td5.cpp.s
-.PHONY : td5.cpp.s
+td6.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/td.dir/build.make CMakeFiles/td.dir/td6.cpp.s
+.PHONY : td6.cpp.s
 
 # Help Target
 help:
@@ -241,9 +241,9 @@ help:
 	@echo "... repere.o"
 	@echo "... repere.i"
 	@echo "... repere.s"
-	@echo "... td5.o"
-	@echo "... td5.i"
-	@echo "... td5.s"
+	@echo "... td6.o"
+	@echo "... td6.i"
+	@echo "... td6.s"
 .PHONY : help
 
 

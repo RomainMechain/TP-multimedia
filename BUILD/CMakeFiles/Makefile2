@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/iut45/Etudiants/o22202608/WinHome/multimedia/canevasTD5
+CMAKE_SOURCE_DIR = /home/iut45/Etudiants/o22202608/WinHome/multimedia/TP-multimedia
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/iut45/Etudiants/o22202608/WinHome/multimedia/canevasTD5/BUILD
+CMAKE_BINARY_DIR = /home/iut45/Etudiants/o22202608/WinHome/multimedia/TP-multimedia/BUILD
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -82,14 +82,14 @@ clean: CMakeFiles/check.dir/clean
 CMakeFiles/td.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/td.dir/build.make CMakeFiles/td.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/td.dir/build.make CMakeFiles/td.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/iut45/Etudiants/o22202608/WinHome/multimedia/canevasTD5/BUILD/CMakeFiles --progress-num=1,2,3,4 "Built target td"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/iut45/Etudiants/o22202608/WinHome/multimedia/TP-multimedia/BUILD/CMakeFiles --progress-num=1,2,3,4 "Built target td"
 .PHONY : CMakeFiles/td.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/td.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/iut45/Etudiants/o22202608/WinHome/multimedia/canevasTD5/BUILD/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/iut45/Etudiants/o22202608/WinHome/multimedia/TP-multimedia/BUILD/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/td.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/iut45/Etudiants/o22202608/WinHome/multimedia/canevasTD5/BUILD/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/iut45/Etudiants/o22202608/WinHome/multimedia/TP-multimedia/BUILD/CMakeFiles 0
 .PHONY : CMakeFiles/td.dir/rule
 
 # Convenience name for target.
@@ -108,14 +108,14 @@ CMakeFiles/td.dir/clean:
 CMakeFiles/check.dir/all: CMakeFiles/td.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/check.dir/build.make CMakeFiles/check.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/check.dir/build.make CMakeFiles/check.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/iut45/Etudiants/o22202608/WinHome/multimedia/canevasTD5/BUILD/CMakeFiles --progress-num= "Built target check"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/iut45/Etudiants/o22202608/WinHome/multimedia/TP-multimedia/BUILD/CMakeFiles --progress-num= "Built target check"
 .PHONY : CMakeFiles/check.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/check.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/iut45/Etudiants/o22202608/WinHome/multimedia/canevasTD5/BUILD/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/iut45/Etudiants/o22202608/WinHome/multimedia/TP-multimedia/BUILD/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/check.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/iut45/Etudiants/o22202608/WinHome/multimedia/canevasTD5/BUILD/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/iut45/Etudiants/o22202608/WinHome/multimedia/TP-multimedia/BUILD/CMakeFiles 0
 .PHONY : CMakeFiles/check.dir/rule
 
 # Convenience name for target.

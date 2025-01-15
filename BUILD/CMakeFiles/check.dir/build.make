@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/iut45/Etudiants/o22202608/WinHome/multimedia/canevasTD5
+CMAKE_SOURCE_DIR = /home/iut45/Etudiants/o22202608/WinHome/multimedia/TP-multimedia
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/iut45/Etudiants/o22202608/WinHome/multimedia/canevasTD5/BUILD
+CMAKE_BINARY_DIR = /home/iut45/Etudiants/o22202608/WinHome/multimedia/TP-multimedia/BUILD
 
 # Utility rule file for check.
 
@@ -82,6 +82,6 @@ CMakeFiles/check.dir/clean:
 .PHONY : CMakeFiles/check.dir/clean
 
 CMakeFiles/check.dir/depend:
-	cd /home/iut45/Etudiants/o22202608/WinHome/multimedia/canevasTD5/BUILD && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/iut45/Etudiants/o22202608/WinHome/multimedia/canevasTD5 /home/iut45/Etudiants/o22202608/WinHome/multimedia/canevasTD5 /home/iut45/Etudiants/o22202608/WinHome/multimedia/canevasTD5/BUILD /home/iut45/Etudiants/o22202608/WinHome/multimedia/canevasTD5/BUILD /home/iut45/Etudiants/o22202608/WinHome/multimedia/canevasTD5/BUILD/CMakeFiles/check.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/iut45/Etudiants/o22202608/WinHome/multimedia/TP-multimedia/BUILD && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/iut45/Etudiants/o22202608/WinHome/multimedia/TP-multimedia /home/iut45/Etudiants/o22202608/WinHome/multimedia/TP-multimedia /home/iut45/Etudiants/o22202608/WinHome/multimedia/TP-multimedia/BUILD /home/iut45/Etudiants/o22202608/WinHome/multimedia/TP-multimedia/BUILD /home/iut45/Etudiants/o22202608/WinHome/multimedia/TP-multimedia/BUILD/CMakeFiles/check.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/check.dir/depend
 
