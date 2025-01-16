@@ -500,7 +500,7 @@ check_gl_error();
     maillages[1]=initVAOs(shaders[1],"/meshes/space_station2.off");
     shaders[2] = initShaders("/shaders/basic.vert.glsl", "/shaders/basic.frag.glsl");
     maillages[2]=initVAOs(shaders[2],"/meshes/milleniumfalcon.off/milleniumfalcon.off");
-    shaders[3] = initShaders("/shaders/basic.vert.glsl", "/shaders/basic.frag.glsl");
+    shaders[3] = initShaders("/shaders/basic.vert_lapin.glsl", "/shaders/basic.frag_lapin.glsl");
     maillages[3]=initVAOs(shaders[3],"/meshes/rabbit.off");
     check_gl_error();
     //initVAOs();
