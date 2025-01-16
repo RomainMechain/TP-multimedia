@@ -36,8 +36,9 @@ void main(void)
   lightDir=vec3(LightSource_position.xyz - vVertex.xyz);
   // out_normal = normalize(mat3(view*model) * in_normal);
 
-  // out_normal = vec3(view*model * vec4(in_normal, 0.0));
+  out_normal = vec3(view*model * vec4(in_normal, 0.0));
 
-  gl_Position = proj*view*model * (vec4(in_pos, 1.0)+0.1*random(in_pos.xy));
-  out_normal =vec3(view*model*vec4(in_normal.x+0.5*random(in_pos.xy),in_normal.y+0.5*random(in_pos.xz),in_normal.z+0.5*random(in_pos.yz), 0.0));
+  gl_Position = proj*view*model * (vec4(in_pos, 1.0));
+  //out_normal =vec3(view*model*vec4(in_normal.x+0.5*random(in_pos.xy),in_normal.y+0.5*random(in_pos.xz),in_normal.z+0.5*random(in_pos.yz), 0.0));
+  //out_normal = in_normal;
 }
