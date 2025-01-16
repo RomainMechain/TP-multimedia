@@ -27,12 +27,6 @@
 
 repere rep(1.0);
 
-// unsigned int progid;
-// unsigned int mvpid;
-// unsigned int modelid;
-// unsigned int viewid;
-// unsigned int projid;
-
 // Matrices 4x4 contenant les transformations.
 glm::mat4 model;
 glm::mat4 view;
@@ -57,6 +51,7 @@ std::array< float, 3 > eye = { 0.0f, 0.0f, 5.0f };
 
 const int NBMESHES = 4;
 
+// Création de la structure Shader
 struct shaderProg
 {
   unsigned int progid; // ID du shader
@@ -66,6 +61,8 @@ struct shaderProg
   unsigned int LightID;
 }shaders[NBMESHES];
 
+
+// Création de la structure maillage 
 struct maillage
 {
   shaderProg shader;
@@ -78,9 +75,15 @@ struct maillage
 
 } maillages[NBMESHES];
 
-void displayMesh(const maillage& mesh, const glm::mat4& model)
+void displayMesh(maillage& mesh, glm::mat4 model)
 {
     glUseProgram( mesh.shader.progid );
+    mesh.angle = angle;
+
+    // placement des différents modèles 
+    model = glm::rotate(model, mesh.angle, glm::vec3(1.0f, 1.0f, 0.0f));
+    model = glm::scale(model, glm::vec3(mesh.scale * 3));
+    model = glm::translate(model, glm::vec3(-mesh.x, -mesh.y, -mesh.z));
 
     mvp = proj * view * model;
     glUniformMatrix4fv( mesh.shader.mid, 1, GL_FALSE, &model[ 0 ][ 0 ] );
@@ -89,8 +92,6 @@ void displayMesh(const maillage& mesh, const glm::mat4& model)
 
     glBindVertexArray( mesh.vaoids );
     glDrawElements( GL_TRIANGLES, mesh.nbtriangles * 3, GL_UNSIGNED_INT, 0 );
-    glBindVertexArray( 0 );
-    glUseProgram( 0 );
 }
 
 void display()
@@ -126,7 +127,7 @@ void display()
 
 void idle()
 {
-    angle += 0.0001f;
+    angle += 0.01f;
     if( angle >= 360.0f )
     {
         angle = 0.0f;
@@ -205,7 +206,6 @@ maillage initVAOs(shaderProg shader, std::string meshPath)
         throw std::runtime_error("can't find the meshe!! Check the name and the path of this file? ");
     }
 
-    
     std::string off;
 
     unsigned int nbpoints, tmp;
@@ -483,7 +483,7 @@ glutInitContextVersion( 3, 2 );
 
     glutDisplayFunc( display );
     glutReshapeFunc( reshape );
-    //glutIdleFunc( idle );
+    glutIdleFunc( idle );
     glutSpecialFunc( special );
     glutKeyboardFunc(keyboard);
 

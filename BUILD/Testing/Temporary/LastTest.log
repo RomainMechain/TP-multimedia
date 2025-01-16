@@ -1,23 +1,19 @@
-Start testing: Jan 15 12:22 CET
+Start testing: Jan 16 12:13 CET
 ----------------------------------------------------------
 1/1 Testing: SimpleTest
 1/1 Test: SimpleTest
 Command: "/home/iut45/Etudiants/o22202608/WinHome/multimedia/TP-multimedia/BUILD/td"
 Directory: /home/iut45/Etudiants/o22202608/WinHome/multimedia/TP-multimedia/BUILD
-"SimpleTest" start time: Jan 15 12:22 CET
+"SimpleTest" start time: Jan 16 12:13 CET
 Output:
 ----------------------------------------------------------
-39520.00447504102370.0490773GL_INVALID_VALUE - /home/iut45/Etudiants/o22202608/WinHome/multimedia/TP-multimedia/td6.cpp:337
-GL_INVALID_VALUE - /home/iut45/Etudiants/o22202608/WinHome/multimedia/TP-multimedia/td6.cpp:362
-1782380.00359496GL_INVALID_VALUE - /home/iut45/Etudiants/o22202608/WinHome/multimedia/TP-multimedia/td6.cpp:337
-GL_INVALID_VALUE - /home/iut45/Etudiants/o22202608/WinHome/multimedia/TP-multimedia/td6.cpp:362
-81006.42372
+39520.00447504102370.04907731782380.0035949681006.42372
 <end of output>
-Test time =  22.21 sec
+Test time =  27.03 sec
 ----------------------------------------------------------
 Test Passed.
-"SimpleTest" end time: Jan 15 12:23 CET
-"SimpleTest" time elapsed: 00:00:22
+"SimpleTest" end time: Jan 16 12:13 CET
+"SimpleTest" time elapsed: 00:00:27
 ----------------------------------------------------------
 
-End testing: Jan 15 12:23 CET
+End testing: Jan 16 12:13 CET
