@@ -953,6 +953,7 @@ CMakeFiles/td.dir/td6.cpp.o: /home/iut45/Etudiants/o22202608/WinHome/multimedia/
   /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timeb.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
@@ -986,6 +987,7 @@ CMakeFiles/td.dir/td6.cpp.o: /home/iut45/Etudiants/o22202608/WinHome/multimedia/
   /usr/include/x86_64-linux-gnu/sys/cdefs.h \
   /usr/include/x86_64-linux-gnu/sys/select.h \
   /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
+  /usr/include/x86_64-linux-gnu/sys/timeb.h \
   /usr/include/x86_64-linux-gnu/sys/types.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/float.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/limits.h \
@@ -994,6 +996,8 @@ CMakeFiles/td.dir/td6.cpp.o: /home/iut45/Etudiants/o22202608/WinHome/multimedia/
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h
 
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_timeb.h:
 
 /usr/include/GL/freeglut_ucall.h:
 
@@ -1348,6 +1352,8 @@ config.h:
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
 
 /usr/include/c++/13/bits/alloc_traits.h:
+
+/usr/include/x86_64-linux-gnu/sys/timeb.h:
 
 /usr/include/c++/13/bits/concept_check.h:
 

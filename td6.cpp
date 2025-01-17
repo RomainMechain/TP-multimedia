@@ -2,6 +2,7 @@
 #include <vector>
 #include <array>
 #include <fstream>
+#include <sys/timeb.h>
 
 #if defined(__APPLE__)
 #define GL_SILENCE_DEPRECATION
@@ -39,7 +40,11 @@ float angleY = 0.0f;
 
 float angle = 0.0f;
 float scale = 0.0f;
-float inc = 0.1f;
+float inc = 0.3f;
+
+float yawRate = 0.0f;
+float pitchRate = 0.0f;
+bool spacePressed = false;
 
 unsigned int vaoids[ 1 ];
 
@@ -75,6 +80,81 @@ struct maillage
 
 } maillages[NBMESHES];
 
+// Définition de la caméra : 
+const float YAW = -1.5707963f; //-90deg
+const float PITCH = 0.0f;
+const float SPEED = 0.0f;
+
+struct camera
+{
+    glm::vec3 Position = {0.0f, 0.0f, 5.0f};
+    glm::vec3 Front = {0.0f, 0.0f, -1.0f};
+    glm::vec3 Up;
+    glm::vec3 Right;
+    glm::vec3 WorldUp = {0.0f, 1.0f, 0.0f};
+    // euler Angles
+    float Yaw = YAW;
+    float Pitch = PITCH;
+    // camera options
+    float MovementSpeed = SPEED;
+
+} globalcamera;
+
+//fonction pour la caméra 
+void updateCameraVectors(camera *mycamera)
+{
+    // calculate the new Front vector
+    glm::vec3 front;
+    front.x = cos(mycamera->Yaw) * cos(mycamera->Pitch);
+    front.y = sin(mycamera->Pitch);
+    front.z = sin(mycamera->Yaw) * cos(mycamera->Pitch);
+    mycamera->Front = glm::normalize(front);
+    // also re-calculate the Right and Up vector
+    mycamera->Right = glm::normalize(glm::cross(mycamera->Front, mycamera->WorldUp)); // normalize the vectors, because their length gets closer to 0 the more you look up or down which results in slower movement.
+    mycamera->Up = glm::normalize(glm::cross(mycamera->Right, mycamera->Front));
+}
+
+int getMilliCount()
+{
+    timeb tb;
+    ftime(&tb);
+    int nCount = tb.millitm + (tb.time & 0xfffff) * 1000;
+    return nCount;
+}
+
+int getMilliSpan(int nTimeStart)
+{
+    int nSpan = getMilliCount() - nTimeStart;
+    if (nSpan < 0)
+        nSpan += 0x100000 * 1000;
+    return nSpan;
+}
+
+int lastTime = 0;
+double elapsed;
+
+void calcTime()
+{
+
+    if (lastTime != 0)
+    {
+
+        elapsed = double(getMilliSpan(lastTime)) / 1000.0;
+        globalcamera.Yaw += yawRate * elapsed;
+        globalcamera.Pitch += pitchRate * elapsed;
+        updateCameraVectors(&globalcamera);
+
+        if (globalcamera.MovementSpeed != 0)
+        {
+            float velocity = globalcamera.MovementSpeed * elapsed;
+            globalcamera.Position += globalcamera.Front * velocity;
+        }
+    }
+
+    lastTime = getMilliCount();
+}
+
+// Fonction pour afficher le maillage
 void displayMesh(maillage& mesh, glm::mat4 model)
 {
     glUseProgram( mesh.shader.progid );
@@ -94,12 +174,13 @@ void displayMesh(maillage& mesh, glm::mat4 model)
     glDrawElements( GL_TRIANGLES, mesh.nbtriangles * 3, GL_UNSIGNED_INT, 0 );
 }
 
-void display()
-      {
+void display(){
+
+    // Calcul du temps
+    calcTime();
+
     glClear( GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT );
-    view = glm::lookAt( glm::vec3( eye[ 0 ], eye[ 1 ], eye[ 2 ] ),
-      glm::vec3( eye[ 0 ], eye[ 1 ], eye[ 2 ]-1.0f ),
-      glm::vec3( 0.0f, 1.0f, 0.0f ) );
+    view = glm::lookAt(globalcamera.Position, globalcamera.Position + globalcamera.Front, globalcamera.Up);
 
     float decal=1.25f;
 
@@ -155,24 +236,96 @@ void reshape( int w, int h )
     proj = glm::perspective( 45.0f, w/static_cast< float >( h ), 0.1f, 100.0f );
 }
 
-
+// Fonction de gestion des touches spéciales
 void special( int key, int x, int y )
 {
     switch( key )
     {
         case GLUT_KEY_LEFT:
-            eye[ 0 ] -= 0.1f;
+            yawRate = -inc;
             break;
         case GLUT_KEY_RIGHT:
-            eye[ 0 ] += 0.1f;
+            yawRate = inc;
             break;
         case GLUT_KEY_UP:
-            eye[ 2 ] -= 0.1f;
+            pitchRate = inc;
             break;
         case GLUT_KEY_DOWN:
-            eye[ 2 ] += 0.1f;
+            pitchRate = -inc;
             break;
     }
+    glutPostRedisplay();
+}
+
+// Fonction de gestion des touches spéciales
+void specialUp(int key, int x, int y)
+{
+    switch (key)
+    {
+    case GLUT_KEY_LEFT:
+        yawRate = 0.0f;
+        break;
+    case GLUT_KEY_RIGHT:
+        yawRate = 0.0f;
+        break;
+    case GLUT_KEY_UP:
+        pitchRate = 0.0f;
+        break;
+    case GLUT_KEY_DOWN:
+        pitchRate = 0.0f;
+        break;
+    }
+    glutPostRedisplay();
+}
+
+// Fonction de gestion des touches spéciales
+void key(unsigned char key, int x, int y)
+{
+    
+    switch (key)
+    {
+    case 'z':
+        if (spacePressed)
+        {
+            globalcamera.MovementSpeed = 6.0f;
+        }
+        else
+        {
+            globalcamera.MovementSpeed = 2.0f;
+        }
+        break;
+    case 's':
+        if (spacePressed)
+        {
+            globalcamera.MovementSpeed = -6.0f;
+        }
+        else
+        {
+            globalcamera.MovementSpeed = -2.0f;
+        }
+        break;
+    case ' ': 
+        spacePressed = true;
+    }
+    updateCameraVectors(&globalcamera);
+    glutPostRedisplay();
+}
+
+// Fonction pour arreter lorsqu'on relache la touche
+void keyUp(unsigned char key, int x, int y)
+{
+    switch (key)
+    {
+    case 'z':
+        globalcamera.MovementSpeed = 0.0f;
+        break;
+    case 's':
+        globalcamera.MovementSpeed = 0.0f;
+        break;
+    case ' ':
+        spacePressed = false;
+    }
+    updateCameraVectors(&globalcamera);
     glutPostRedisplay();
 }
 
@@ -485,7 +638,10 @@ glutInitContextVersion( 3, 2 );
     glutReshapeFunc( reshape );
     glutIdleFunc( idle );
     glutSpecialFunc( special );
-    glutKeyboardFunc(keyboard);
+    //glutKeyboardFunc(keyboard);
+    glutSpecialUpFunc(specialUp);
+    glutKeyboardFunc(key);
+    glutKeyboardUpFunc(keyUp);
 
     // Initialisation de la bibliothèque GLEW.
 #if not defined(__APPLE__)
